@@ -1,4 +1,4 @@
-
+The Cheung group (https://mynsm.uh.edu/wiki/projects/cheunggroup/) from University of Houston has been conducting research using molecular simulations of coarse-grained protein models. We are releasing this code, based on source code of SANDER from AMBER6, to promote research in protein folding and dynamics under high pressure and/or crowded conditions. 
 
 These codes includes additional Hamiltonian terms for the coarse-grained deslovation model with and without crowders.  Due to amber6 licensing agreement, we can only provide parts of the code that we have modified. To compile the code, users need to have a complete set of amber6.  
 
