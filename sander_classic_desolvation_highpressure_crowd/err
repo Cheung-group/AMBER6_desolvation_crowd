@@ -1,0 +1,59 @@
+cd ../lib; ./Makelist ../lib/grdmax.o ../lib/rfree.o ../lib/rgroup.o ../lib/ddotp.o  ../lib/eis.o ../lib/random.o ../lib/matinv.o ../lib/lsqfit.o ../lib/util.o ../lib/amopen.o ../lib/namlst90.o ../lib/mexit.o ../lib/malloc.o
+make[1]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: `grdmax.o' is up to date.
+make[1]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: `rfree.o' is up to date.
+make[1]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: `rgroup.o' is up to date.
+make[1]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: `ddotp.o' is up to date.
+make[1]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: `eis.o' is up to date.
+make[1]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: `random.o' is up to date.
+make[1]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: `matinv.o' is up to date.
+make[1]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: `lsqfit.o' is up to date.
+make[1]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: `util.o' is up to date.
+make[1]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: `amopen.o' is up to date.
+make[1]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: `namlst90.o' is up to date.
+make[1]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: `mexit.o' is up to date.
+make[1]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+make[1]: `malloc.o' is up to date.
+make[1]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lib'
+( SYSDIR=`../sysdir dir` ; echo sysdir is $SYSDIR ; \
+		cd $SYSDIR ; make sys.a )
+sysdir is /home/u2/cheung/amber/BIN/amb6.lan/src/Machines/g77
+make[1]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/Machines/g77'
+make[1]: `sys.a' is up to date.
+make[1]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/Machines/g77'
+cd ../lapack; make
+make[1]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lapack'
+./Makelapack
+make[2]: Entering directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lapack'
+ar r lapack.a dsyev.o dlansy.o dsytrd.o dorgtr.o dsteqr.o dsterf.o dlascl.o dlamch.o xerbla.o ilaenv.o dlassq.o dsytd2.o dlatrd.o dorgql.o dorgqr.o dlasrt.o dlaset.o dlanst.o dlaev2.o dlasr.o dlapy2.o dlartg.o dlae2.o dorg2r.o dlarft.o dlarfb.o dorg2l.o dlarfg.o dlarf.o dspev.o dlansp.o dsptrd.o dopgtr.o dppsv.o dspsv.o dgeev.o dsptrs.o dsptrf.o dpptrs.o dpptrf.o dgebak.o dtrevc.o dlacpy.o dhseqr.o dorghr.o dgehrd.o dgebal.o dlange.o dlabad.o dlahqr.o dlarfx.o dlanhs.o dlaln2.o dgehd2.o dlahrd.o dlanv2.o dladiv.o dlarnv.o dlaruv.o
+make[2]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lapack'
+make[1]: Leaving directory `/home/u2/cheung/amber/BIN/amb6.lan/src/lapack'
+SYSLIB=`../sysdir lib` ; ../Compile LOAD -o sander_classic \
+		sander.o cshf.o noecalc.o caldis.o nonbon.o calrate.o dinten.o drates.o indexn.o kmat.o pearsn.o erfcc.o plane.o remarc.o nmrcal.o nmrred.o restal.o getnat.o nmrnrg.o modwt.o disnrg.o angnrg.o tornrg.o nmrprt.o nmrgrp.o nmrcms.o nmrcmf.o impnum.o nmrrad.o nmrsht.o at2res.o chklin.o opnmrg.o printe.o runmin.o ndvprt.o force.o rdparm.o mdread.o locmem.o runmd.o newvel.o getcor.o r6ave.o r6drv.o aveint.o degcnt.o decnvh.o corf.o efield.o indip.o threeb.o tripl.o politr.o polder.o fastwt.o solpnt.o echoin.o parallel.o jnrg.o misc.o shake.o qiktip.o ene.o mdwrit.o minrit.o resnba.o set.o setmm.o dynlib.o period.o mdfil.o nmlsrc.o ew_force.o ew_setup.o ew_box.o ew_extra.o ew_fft.o ew_direct.o ew_recip.o cosmo.o pcshift.o wrtmny.o wrtint.o intclc.o redarc.o  lgandb.o lgcall.o lgclc.o lgread.o lgrst.o lgset.o lgwrt.o ovrlap.o lgcoor.o lgnbad.o lgrfcl.o avefrc.o popbck.o ../lapack/lapack.a   ../lib/grdmax.o ../lib/rfree.o ../lib/rgroup.o ../lib/ddotp.o  ../lib/eis.o ../lib/random.o ../lib/matinv.o ../lib/lsqfit.o ../lib/util.o ../lib/amopen.o ../lib/namlst90.o ../lib/mexit.o ../lib/malloc.o $SYSLIB;
+g77 -O6 -o sander_classic sander.o cshf.o noecalc.o caldis.o nonbon.o calrate.o dinten.o drates.o indexn.o kmat.o pearsn.o erfcc.o plane.o remarc.o nmrcal.o nmrred.o restal.o getnat.o nmrnrg.o modwt.o disnrg.o angnrg.o tornrg.o nmrprt.o nmrgrp.o nmrcms.o nmrcmf.o impnum.o nmrrad.o nmrsht.o at2res.o chklin.o opnmrg.o printe.o runmin.o ndvprt.o force.o rdparm.o mdread.o locmem.o runmd.o newvel.o getcor.o r6ave.o r6drv.o aveint.o degcnt.o decnvh.o corf.o efield.o indip.o threeb.o tripl.o politr.o polder.o fastwt.o solpnt.o echoin.o parallel.o jnrg.o misc.o shake.o qiktip.o ene.o mdwrit.o minrit.o resnba.o set.o setmm.o dynlib.o period.o mdfil.o nmlsrc.o ew_force.o ew_setup.o ew_box.o ew_extra.o ew_fft.o ew_direct.o ew_recip.o cosmo.o pcshift.o wrtmny.o wrtint.o intclc.o redarc.o lgandb.o lgcall.o lgclc.o lgread.o lgrst.o lgset.o lgwrt.o ovrlap.o lgcoor.o lgnbad.o lgrfcl.o avefrc.o popbck.o ../lapack/lapack.a ../lib/grdmax.o ../lib/rfree.o ../lib/rgroup.o ../lib/ddotp.o ../lib/eis.o ../lib/random.o ../lib/matinv.o ../lib/lsqfit.o ../lib/util.o ../lib/amopen.o ../lib/namlst90.o ../lib/mexit.o ../lib/malloc.o /home/u2/cheung/amber/BIN/amb6.lan/src/Machines/g77/sys.a -lm
+SYSLIB=`../sysdir lib` ; ../Compile LOAD -o sander.LES_classic \
+		sander.o cshf.o noecalc.o caldis.o nonbon.LES.o calrate.o dinten.o drates.o indexn.o kmat.o pearsn.o erfcc.o plane.o remarc.o nmrcal.o nmrred.o restal.o getnat.o nmrnrg.o modwt.o disnrg.o angnrg.o tornrg.o nmrprt.o nmrgrp.o nmrcms.o nmrcmf.o impnum.o nmrrad.o nmrsht.o at2res.o chklin.o opnmrg.o printe.o runmin.o ndvprt.o force.o rdparm.LES.o mdread.LES.o locmem.o runmd.o newvel.o getcor.o r6ave.LES.o r6drv.o aveint.o degcnt.o decnvh.o corf.o efield.o indip.o threeb.o tripl.o politr.o polder.o fastwt.o solpnt.o echoin.o parallel.LES.o jnrg.LES.o misc.o shake.o qiktip.o ene.LES.o mdwrit.o minrit.o resnba.o set.o setmm.o dynlib.o period.o mdfil.o nmlsrc.o ew_force.o ew_setup.o ew_box.o ew_extra.o ew_fft.o ew_direct.o ew_recip.o cosmo.o pcshift.o wrtmny.o wrtint.o intclc.o redarc.o  lgandb.o lgcall.o lgclc.o lgread.o lgrst.o lgset.o lgwrt.o ovrlap.o lgcoor.o lgnbad.o lgrfcl.o avefrc.o popbck.o ../lapack/lapack.a ../lib/grdmax.o ../lib/rfree.o ../lib/rgroup.o ../lib/ddotp.o  ../lib/eis.o ../lib/random.o ../lib/matinv.o ../lib/lsqfit.o ../lib/util.o ../lib/amopen.o ../lib/namlst90.o ../lib/mexit.o ../lib/malloc.o $SYSLIB;
+g77 -O6 -o sander.LES_classic sander.o cshf.o noecalc.o caldis.o nonbon.LES.o calrate.o dinten.o drates.o indexn.o kmat.o pearsn.o erfcc.o plane.o remarc.o nmrcal.o nmrred.o restal.o getnat.o nmrnrg.o modwt.o disnrg.o angnrg.o tornrg.o nmrprt.o nmrgrp.o nmrcms.o nmrcmf.o impnum.o nmrrad.o nmrsht.o at2res.o chklin.o opnmrg.o printe.o runmin.o ndvprt.o force.o rdparm.LES.o mdread.LES.o locmem.o runmd.o newvel.o getcor.o r6ave.LES.o r6drv.o aveint.o degcnt.o decnvh.o corf.o efield.o indip.o threeb.o tripl.o politr.o polder.o fastwt.o solpnt.o echoin.o parallel.LES.o jnrg.LES.o misc.o shake.o qiktip.o ene.LES.o mdwrit.o minrit.o resnba.o set.o setmm.o dynlib.o period.o mdfil.o nmlsrc.o ew_force.o ew_setup.o ew_box.o ew_extra.o ew_fft.o ew_direct.o ew_recip.o cosmo.o pcshift.o wrtmny.o wrtint.o intclc.o redarc.o lgandb.o lgcall.o lgclc.o lgread.o lgrst.o lgset.o lgwrt.o ovrlap.o lgcoor.o lgnbad.o lgrfcl.o avefrc.o popbck.o ../lapack/lapack.a ../lib/grdmax.o ../lib/rfree.o ../lib/rgroup.o ../lib/ddotp.o ../lib/eis.o ../lib/random.o ../lib/matinv.o ../lib/lsqfit.o ../lib/util.o ../lib/amopen.o ../lib/namlst90.o ../lib/mexit.o ../lib/malloc.o /home/u2/cheung/amber/BIN/amb6.lan/src/Machines/g77/sys.a -lm

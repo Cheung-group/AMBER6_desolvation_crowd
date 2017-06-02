@@ -1,0 +1,11 @@
+
+
+These codes includes additional Hamiltonian terms for the coarse-grained deslovation model with and without crowders.  Due to amber6 licensing agreement, we can only provide parts of the code that we have modified. To compile the code, users need to have a complete set of amber6.  
+
+Code for high pressure without crowding:
+sander_classic_desolvation_highpressure  
+
+Code for high pressure with crowding:
+sander_classic_desolvation_highpressure_crowd
+
+
